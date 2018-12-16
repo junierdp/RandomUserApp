@@ -22,6 +22,7 @@ struct User: Codable {
     var phone: String?
     var cell: String?
     var picture: UserPicture?
+    var location: UserLocation?
     
     internal struct UserName: Codable {
         var title: String?
@@ -33,6 +34,13 @@ struct User: Codable {
         var large: String?
         var medium: String?
         var thumbnail: String?
+    }
+    
+    internal struct UserLocation: Codable {
+        var street: String?
+        var city: String?
+        var state: String?
+        var postcode: Int?
     }
 }
 
