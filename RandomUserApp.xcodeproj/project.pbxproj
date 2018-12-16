@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4EC006D51913ED5EF5DCFBE4 /* Pods_RandomUserApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3941154B00AC4309FF29AE /* Pods_RandomUserApp.framework */; };
 		61B4528721C32069001CA325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B4528621C32069001CA325 /* AppDelegate.swift */; };
-		61B4528921C32069001CA325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B4528821C32069001CA325 /* ViewController.swift */; };
 		61B4528C21C32069001CA325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B4528A21C32069001CA325 /* Main.storyboard */; };
 		61B4528E21C3206B001CA325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B4528D21C3206B001CA325 /* Assets.xcassets */; };
 		61B4529121C3206B001CA325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B4528F21C3206B001CA325 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,14 @@
 		61B452C621C597F9001CA325 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 61B452C521C597F9001CA325 /* user.json */; };
 		61B452C821C5A01A001CA325 /* offline.json in Resources */ = {isa = PBXBuildFile; fileRef = 61B452C721C5A01A001CA325 /* offline.json */; };
 		61B452CA21C5A16E001CA325 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B452C921C5A16E001CA325 /* ErrorMessage.swift */; };
+		61B452CE21C5ABE9001CA325 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B452CD21C5ABE9001CA325 /* UserListViewModel.swift */; };
+		61B452D021C5AC91001CA325 /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B452CF21C5AC90001CA325 /* UserListTableViewController.swift */; };
+		61B452D321C5AE26001CA325 /* LoveloBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 61B452D221C5AE26001CA325 /* LoveloBold.otf */; };
+		61B452D821C5AE86001CA325 /* AvenirNextLTPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 61B452D421C5AE86001CA325 /* AvenirNextLTPro-Regular.otf */; };
+		61B452D921C5AE86001CA325 /* AvenirNextLTPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 61B452D521C5AE86001CA325 /* AvenirNextLTPro-Bold.otf */; };
+		61B452DA21C5AE86001CA325 /* AvenirNextLTPro-MediumCn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 61B452D621C5AE86001CA325 /* AvenirNextLTPro-MediumCn.otf */; };
+		61B452DB21C5AE86001CA325 /* AvenirNextLTPro-Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 61B452D721C5AE86001CA325 /* AvenirNextLTPro-Demi.otf */; };
+		61B452DD21C5F0E5001CA325 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B452DC21C5F0E5001CA325 /* UIViewExtension.swift */; };
 		75DB872B06A44E3AD425AC44 /* Pods_RandomUserAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B58E766DDD4E78690AB497 /* Pods_RandomUserAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +43,6 @@
 /* Begin PBXFileReference section */
 		61B4528321C32069001CA325 /* RandomUserApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B4528621C32069001CA325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		61B4528821C32069001CA325 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61B4528B21C32069001CA325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61B4528D21C3206B001CA325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61B4529021C3206B001CA325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +56,14 @@
 		61B452C521C597F9001CA325 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		61B452C721C5A01A001CA325 /* offline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = offline.json; sourceTree = "<group>"; };
 		61B452C921C5A16E001CA325 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		61B452CD21C5ABE9001CA325 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		61B452CF21C5AC90001CA325 /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
+		61B452D221C5AE26001CA325 /* LoveloBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LoveloBold.otf; sourceTree = "<group>"; };
+		61B452D421C5AE86001CA325 /* AvenirNextLTPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-Regular.otf"; sourceTree = "<group>"; };
+		61B452D521C5AE86001CA325 /* AvenirNextLTPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-Bold.otf"; sourceTree = "<group>"; };
+		61B452D621C5AE86001CA325 /* AvenirNextLTPro-MediumCn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-MediumCn.otf"; sourceTree = "<group>"; };
+		61B452D721C5AE86001CA325 /* AvenirNextLTPro-Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-Demi.otf"; sourceTree = "<group>"; };
+		61B452DC21C5F0E5001CA325 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		74AD1FCD5E0C9607EF100D95 /* Pods-RandomUserAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomUserAppTests.release.xcconfig"; path = "Target Support Files/Pods-RandomUserAppTests/Pods-RandomUserAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		82309061495F376DC5B416C6 /* Pods-RandomUserApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomUserApp.debug.xcconfig"; path = "Target Support Files/Pods-RandomUserApp/Pods-RandomUserApp.debug.xcconfig"; sourceTree = "<group>"; };
 		98B58E766DDD4E78690AB497 /* Pods_RandomUserAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUserAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,13 +115,11 @@
 		61B4528521C32069001CA325 /* RandomUserApp */ = {
 			isa = PBXGroup;
 			children = (
-				61B452BD21C44D27001CA325 /* Model */,
 				61B452B421C43911001CA325 /* Network */,
+				61B452BD21C44D27001CA325 /* Model */,
+				61B452CB21C5AB16001CA325 /* View */,
 				61B4528621C32069001CA325 /* AppDelegate.swift */,
-				61B4528821C32069001CA325 /* ViewController.swift */,
-				61B4528A21C32069001CA325 /* Main.storyboard */,
 				61B4528D21C3206B001CA325 /* Assets.xcassets */,
-				61B4528F21C3206B001CA325 /* LaunchScreen.storyboard */,
 				61B4529221C3206B001CA325 /* Info.plist */,
 			);
 			path = RandomUserApp;
@@ -148,6 +160,39 @@
 				61B452C721C5A01A001CA325 /* offline.json */,
 			);
 			path = Stubs;
+			sourceTree = "<group>";
+		};
+		61B452CB21C5AB16001CA325 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61B452D121C5ADF5001CA325 /* Font */,
+				61B452CC21C5AB33001CA325 /* UserList */,
+				61B4528F21C3206B001CA325 /* LaunchScreen.storyboard */,
+				61B4528A21C32069001CA325 /* Main.storyboard */,
+				61B452DC21C5F0E5001CA325 /* UIViewExtension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61B452CC21C5AB33001CA325 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				61B452CD21C5ABE9001CA325 /* UserListViewModel.swift */,
+				61B452CF21C5AC90001CA325 /* UserListTableViewController.swift */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		61B452D121C5ADF5001CA325 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				61B452D521C5AE86001CA325 /* AvenirNextLTPro-Bold.otf */,
+				61B452D721C5AE86001CA325 /* AvenirNextLTPro-Demi.otf */,
+				61B452D621C5AE86001CA325 /* AvenirNextLTPro-MediumCn.otf */,
+				61B452D421C5AE86001CA325 /* AvenirNextLTPro-Regular.otf */,
+				61B452D221C5AE26001CA325 /* LoveloBold.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		A7D3687E483B17C533520FBE /* Frameworks */ = {
@@ -255,9 +300,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B452DB21C5AE86001CA325 /* AvenirNextLTPro-Demi.otf in Resources */,
 				61B4529121C3206B001CA325 /* LaunchScreen.storyboard in Resources */,
+				61B452D821C5AE86001CA325 /* AvenirNextLTPro-Regular.otf in Resources */,
+				61B452D921C5AE86001CA325 /* AvenirNextLTPro-Bold.otf in Resources */,
 				61B4528E21C3206B001CA325 /* Assets.xcassets in Resources */,
 				61B4528C21C32069001CA325 /* Main.storyboard in Resources */,
+				61B452D321C5AE26001CA325 /* LoveloBold.otf in Resources */,
+				61B452DA21C5AE86001CA325 /* AvenirNextLTPro-MediumCn.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,11 +419,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				61B452B821C4394C001CA325 /* RandomUserAPIRoutes.swift in Sources */,
-				61B4528921C32069001CA325 /* ViewController.swift in Sources */,
+				61B452CE21C5ABE9001CA325 /* UserListViewModel.swift in Sources */,
 				61B452B621C43932001CA325 /* RandomUserAPIClient.swift in Sources */,
+				61B452D021C5AC91001CA325 /* UserListTableViewController.swift in Sources */,
 				61B452BF21C44DC1001CA325 /* User.swift in Sources */,
 				61B452CA21C5A16E001CA325 /* ErrorMessage.swift in Sources */,
 				61B4528721C32069001CA325 /* AppDelegate.swift in Sources */,
+				61B452DD21C5F0E5001CA325 /* UIViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
