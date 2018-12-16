@@ -13,20 +13,33 @@ PODS:
   - OHHTTPStubs/OHPathHelpers (6.1.0)
   - OHHTTPStubs/Swift (6.1.0):
     - OHHTTPStubs/Default
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
 
 DEPENDENCIES:
   - Alamofire
   - OHHTTPStubs/Swift
+  - RxCocoa
+  - RxSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - OHHTTPStubs
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: d465adfae7ece917a3904fa89108010f89e81959
+PODFILE CHECKSUM: c098dcafa08e0f25e36baa90c4632c89d6bce9da
 
 COCOAPODS: 1.6.0.beta.2
