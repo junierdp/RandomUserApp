@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4EC006D51913ED5EF5DCFBE4 /* Pods_RandomUserApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3941154B00AC4309FF29AE /* Pods_RandomUserApp.framework */; };
+		614437F621C7407E005999F2 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614437F521C7407E005999F2 /* ActivityIndicator.swift */; };
+		614437F821C74130005999F2 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614437F721C74130005999F2 /* Utility.swift */; };
 		61B4528721C32069001CA325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B4528621C32069001CA325 /* AppDelegate.swift */; };
 		61B4528C21C32069001CA325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B4528A21C32069001CA325 /* Main.storyboard */; };
 		61B4528E21C3206B001CA325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B4528D21C3206B001CA325 /* Assets.xcassets */; };
@@ -27,6 +29,10 @@
 		61B452DA21C5AE86001CA325 /* AvenirNextLTPro-MediumCn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 61B452D621C5AE86001CA325 /* AvenirNextLTPro-MediumCn.otf */; };
 		61B452DB21C5AE86001CA325 /* AvenirNextLTPro-Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 61B452D721C5AE86001CA325 /* AvenirNextLTPro-Demi.otf */; };
 		61B452DD21C5F0E5001CA325 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B452DC21C5F0E5001CA325 /* UIViewExtension.swift */; };
+		61B452E121C695F4001CA325 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B452E021C695F4001CA325 /* UserAPI.swift */; };
+		61B452E321C6A89F001CA325 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B452E221C6A89F001CA325 /* UserViewModel.swift */; };
+		61B452E621C6A995001CA325 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B452E521C6A995001CA325 /* BaseViewModel.swift */; };
+		61B452E821C6B784001CA325 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B452E721C6B784001CA325 /* UserTableViewCell.swift */; };
 		75DB872B06A44E3AD425AC44 /* Pods_RandomUserAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B58E766DDD4E78690AB497 /* Pods_RandomUserAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		614437F521C7407E005999F2 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		614437F721C74130005999F2 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		61B4528321C32069001CA325 /* RandomUserApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B4528621C32069001CA325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61B4528B21C32069001CA325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +72,10 @@
 		61B452D621C5AE86001CA325 /* AvenirNextLTPro-MediumCn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-MediumCn.otf"; sourceTree = "<group>"; };
 		61B452D721C5AE86001CA325 /* AvenirNextLTPro-Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-Demi.otf"; sourceTree = "<group>"; };
 		61B452DC21C5F0E5001CA325 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		61B452E021C695F4001CA325 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		61B452E221C6A89F001CA325 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		61B452E521C6A995001CA325 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		61B452E721C6B784001CA325 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		74AD1FCD5E0C9607EF100D95 /* Pods-RandomUserAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomUserAppTests.release.xcconfig"; path = "Target Support Files/Pods-RandomUserAppTests/Pods-RandomUserAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		82309061495F376DC5B416C6 /* Pods-RandomUserApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomUserApp.debug.xcconfig"; path = "Target Support Files/Pods-RandomUserApp/Pods-RandomUserApp.debug.xcconfig"; sourceTree = "<group>"; };
 		98B58E766DDD4E78690AB497 /* Pods_RandomUserAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUserAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +127,7 @@
 		61B4528521C32069001CA325 /* RandomUserApp */ = {
 			isa = PBXGroup;
 			children = (
+				61B452E421C6A980001CA325 /* Util */,
 				61B452B421C43911001CA325 /* Network */,
 				61B452BD21C44D27001CA325 /* Model */,
 				61B452CB21C5AB16001CA325 /* View */,
@@ -138,6 +151,7 @@
 		61B452B421C43911001CA325 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				61B452DF21C695C8001CA325 /* API */,
 				61B452B521C43932001CA325 /* RandomUserAPIClient.swift */,
 				61B452B721C4394C001CA325 /* RandomUserAPIRoutes.swift */,
 			);
@@ -177,8 +191,10 @@
 		61B452CC21C5AB33001CA325 /* UserList */ = {
 			isa = PBXGroup;
 			children = (
-				61B452CD21C5ABE9001CA325 /* UserListViewModel.swift */,
 				61B452CF21C5AC90001CA325 /* UserListTableViewController.swift */,
+				61B452CD21C5ABE9001CA325 /* UserListViewModel.swift */,
+				61B452E221C6A89F001CA325 /* UserViewModel.swift */,
+				61B452E721C6B784001CA325 /* UserTableViewCell.swift */,
 			);
 			path = UserList;
 			sourceTree = "<group>";
@@ -193,6 +209,24 @@
 				61B452D221C5AE26001CA325 /* LoveloBold.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		61B452DF21C695C8001CA325 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				61B452E021C695F4001CA325 /* UserAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		61B452E421C6A980001CA325 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				61B452E521C6A995001CA325 /* BaseViewModel.swift */,
+				614437F521C7407E005999F2 /* ActivityIndicator.swift */,
+				614437F721C74130005999F2 /* Utility.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		A7D3687E483B17C533520FBE /* Frameworks */ = {
@@ -377,12 +411,28 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RandomUserApp/Pods-RandomUserApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,13 +469,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				61B452B821C4394C001CA325 /* RandomUserAPIRoutes.swift in Sources */,
+				61B452E621C6A995001CA325 /* BaseViewModel.swift in Sources */,
 				61B452CE21C5ABE9001CA325 /* UserListViewModel.swift in Sources */,
 				61B452B621C43932001CA325 /* RandomUserAPIClient.swift in Sources */,
+				614437F621C7407E005999F2 /* ActivityIndicator.swift in Sources */,
+				61B452E821C6B784001CA325 /* UserTableViewCell.swift in Sources */,
+				61B452E321C6A89F001CA325 /* UserViewModel.swift in Sources */,
 				61B452D021C5AC91001CA325 /* UserListTableViewController.swift in Sources */,
 				61B452BF21C44DC1001CA325 /* User.swift in Sources */,
+				614437F821C74130005999F2 /* Utility.swift in Sources */,
 				61B452CA21C5A16E001CA325 /* ErrorMessage.swift in Sources */,
 				61B4528721C32069001CA325 /* AppDelegate.swift in Sources */,
 				61B452DD21C5F0E5001CA325 /* UIViewExtension.swift in Sources */,
+				61B452E121C695F4001CA325 /* UserAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

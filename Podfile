@@ -8,6 +8,10 @@ target 'RandomUserApp' do
   # Pods for RandomUserApp
 
   pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'MaterialComponents/ActivityIndicator'
+  pod 'SDWebImage'
 
   target 'RandomUserAppTests' do
     inherit! :search_paths

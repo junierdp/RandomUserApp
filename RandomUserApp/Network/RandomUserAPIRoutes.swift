@@ -16,7 +16,7 @@ enum RandomUserAPIRoutes: URLRequestConvertible {
     private var endpoint: String {
         switch self {
         case .getUsers:
-            return ""
+            return "/"
         }
     }
     
@@ -41,7 +41,7 @@ enum RandomUserAPIRoutes: URLRequestConvertible {
     
     func asURLRequest() throws -> URLRequest {
         // Request endpoint
-        let url: URL = try ("https://randomuser.me/api/" + endpoint).asURL()
+        let url: URL = try ("https://randomuser.me/api" + endpoint).asURL()
         var request = URLRequest(url: url)
         
         // Request method
