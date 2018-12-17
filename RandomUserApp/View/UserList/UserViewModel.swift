@@ -8,16 +8,20 @@
 
 import Foundation
 
-class UserViewModel {
-    var name: String
-    var firstName: String
-    var lastName: String
-    var phone: String
-    var cell: String
-    var email: String
+class UserViewModel: NSObject {
+    @objc var name: String
+    @objc var firstName: String
+    @objc var lastName: String
+    @objc var phone: String
+    @objc var cell: String
+    @objc var email: String
     
-    var mediumImageURL: String
-    var largeImageURL: String
+    @objc var mediumImageURL: String
+    @objc var largeImageURL: String
+    
+    @objc var street: String
+    @objc var city: String
+    @objc var state: String
     
     init(user: User) {
         self.name = "\(user.name?.title ?? "") \(user.name?.first ?? "") \(user.name?.last ?? "")".capitalized
@@ -29,5 +33,9 @@ class UserViewModel {
         
         self.mediumImageURL = (user.picture?.medium)!
         self.largeImageURL = (user.picture?.large)!
+        
+        self.street = (user.location?.street)!
+        self.city = (user.location?.city)!
+        self.state = (user.location?.state)!
     }
 }

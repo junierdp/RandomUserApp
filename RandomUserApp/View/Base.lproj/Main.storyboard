@@ -170,7 +170,7 @@
         <!--Detail-->
         <scene sceneID="1Ru-cJ-iey">
             <objects>
-                <viewController id="lgl-br-I4R" sceneMemberID="viewController">
+                <viewController id="lgl-br-I4R" customClass="DetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o07-4X-sLG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -370,6 +370,15 @@
                         <viewLayoutGuide key="safeArea" id="wPT-Mv-F4E"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="dg5-Vn-o4b"/>
+                    <connections>
+                        <outlet property="userAddressCity" destination="qt2-db-Iqq" id="oh6-lM-2q0"/>
+                        <outlet property="userAddressState" destination="y30-06-kzW" id="Jdd-a0-IFF"/>
+                        <outlet property="userAddressStreet" destination="Why-yc-nfP" id="Zvb-3B-5hh"/>
+                        <outlet property="userCellLabel" destination="X1z-PC-UJE" id="uzb-Hb-zvn"/>
+                        <outlet property="userImage" destination="PBM-G3-w0c" id="SZb-dR-Fje"/>
+                        <outlet property="userNameLabel" destination="k50-0a-pMa" id="wdq-0k-DJO"/>
+                        <outlet property="userPhoneLabel" destination="7BG-ls-UMB" id="l5W-7e-4Fg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ynv-Xd-bgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
