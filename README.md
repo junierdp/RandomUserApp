@@ -1,5 +1,20 @@
 # RandomUserApp
 
+## Instalación
+
+- Hacer Git Clone del proyecto.
+- Instalar las dependencias desde la terminal:
+
+cd RandomUserApp
+pod install
+
+Si no tienes CocoaPods instalado, en el siguiente link estan las instrucciones: https://cocoapods.org
+
+- Abrir el archivo con extención .xcworkspace en Xcode.
+- SHIFT + COMMAND + K -> para limpiar el proyecto.
+- COMMAND + B -> para hacer build.
+- Por último ejecutar la aplicación.
+
 ## iOS Coding Challenge
 
 ### Se requiere hacer  una App iOS nativa que hara lo siguiente:
