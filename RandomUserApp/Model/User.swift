@@ -40,7 +40,6 @@ struct User: Codable {
         var street: String?
         var city: String?
         var state: String?
-        var postcode: Int?
     }
 }
 
