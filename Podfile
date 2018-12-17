@@ -11,6 +11,7 @@ target 'RandomUserApp' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'MaterialComponents/ActivityIndicator'
+  pod 'SDWebImage'
 
   target 'RandomUserAppTests' do
     inherit! :search_paths
