@@ -34,3 +34,11 @@
 - Los distintos módulos se deben condificar en Swift 4.x, excepto el controlador de la Detail View, que deben codificarse con Objective - C.
 - En todos los textos usar una tipografía que NO sea System Font.
 - *Un plus* es que los frames de las imagenes tengan corner radius != 0.
+
+### UI
+
+<img src="https://raw.githubusercontent.com/junierdp/RandomUserApp/master/screen/1.jpeg" align="center" height="500px" width="282px"/>
+User List
+
+<img src="https://raw.githubusercontent.com/junierdp/RandomUserApp/master/screen/2.jpeg" align="center" height="500px" width="282px"/>
+User Detail
