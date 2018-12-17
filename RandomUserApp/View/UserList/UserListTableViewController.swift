@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import SDWebImage
 
 class UserListTableViewController: UITableViewController {
     
@@ -32,6 +33,8 @@ class UserListTableViewController: UITableViewController {
                 userCell.userEmailLabel.text = user.email
                 userCell.userPhoneLabel.text = user.phone
                 userCell.userCellLabel.text = user.cell
+                
+                userCell.userImage.sd_setImage(with: URL.init(string: user.largeImageURL))
             }
             
         }.disposed(by: self.userListViewModel.disposeBag)

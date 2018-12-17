@@ -16,6 +16,9 @@ class UserViewModel {
     var cell: String
     var email: String
     
+    var mediumImageURL: String
+    var largeImageURL: String
+    
     init(user: User) {
         self.name = "\(user.name?.title ?? "") \(user.name?.first ?? "") \(user.name?.last ?? "")".capitalized
         self.firstName = user.name?.first ?? ""
@@ -23,5 +26,8 @@ class UserViewModel {
         self.phone = user.phone ?? "N/A"
         self.cell = user.cell ?? "N/A"
         self.email = user.email ?? "N/A"
+        
+        self.mediumImageURL = (user.picture?.medium)!
+        self.largeImageURL = (user.picture?.large)!
     }
 }
