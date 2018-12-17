@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RandomUserApp-Swift.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -22,8 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
     @property (weak, nonatomic) IBOutlet UILabel *userAddressCity;
     @property (weak, nonatomic) IBOutlet UILabel *userAddressState;
     
-    @property (nonatomic, strong) UserViewModel *userViewModel;
-    
+    @property (nonatomic, strong) NSObject *userViewModel;
+
 @end
 
 NS_ASSUME_NONNULL_END

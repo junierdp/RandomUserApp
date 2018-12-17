@@ -7,25 +7,26 @@
 //
 
 #import "DetailViewController.h"
+#import <RandomUserApp-Swift.h>
 
 @interface DetailViewController ()
 
 @end
 
 @implementation DetailViewController
-    
+
     @synthesize userViewModel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [_userImage sd_setImageWithURL:[NSURL URLWithString: userViewModel.largeImageURL]];
-    _userNameLabel.text = userViewModel.name;
-    _userPhoneLabel.text = userViewModel.phone;
-    _userCellLabel.text = userViewModel.cell;
-    _userAddressStreet.text = userViewModel.street;
-    _userAddressCity.text = userViewModel.city;
-    _userAddressState.text = userViewModel.state;
+    [_userImage sd_setImageWithURL:[NSURL URLWithString: ((UserViewModel *)userViewModel).largeImageURL]];
+    _userNameLabel.text = ((UserViewModel *)userViewModel).name;
+    _userPhoneLabel.text = ((UserViewModel *)userViewModel).phone;
+    _userCellLabel.text = ((UserViewModel *)userViewModel).cell;
+    _userAddressStreet.text = ((UserViewModel *)userViewModel).street;
+    _userAddressCity.text = ((UserViewModel *)userViewModel).city;
+    _userAddressState.text = ((UserViewModel *)userViewModel).state;
 }
 
 @end
