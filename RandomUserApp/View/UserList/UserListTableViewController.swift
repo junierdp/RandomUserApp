@@ -73,4 +73,11 @@ class UserListTableViewController: UITableViewController {
             }
         }).subscribe().disposed(by: self.userListViewModel.disposeBag)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToUserDetail" {
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.userViewModel = sender as! UserViewModel
+        }
+    }
 }
