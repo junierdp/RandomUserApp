@@ -12,6 +12,8 @@ import RxCocoa
 
 class UserListTableViewController: UITableViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     var userListViewModel = UserListViewModel()
     
     override func viewDidLoad() {
@@ -22,7 +24,8 @@ class UserListTableViewController: UITableViewController {
         
         self.tableView.rowHeight = 130
         
-        self.userListViewModel.userLoaded.bind(to: self.tableView.rx.items(cellIdentifier: "userCell")) { _, user, cell in
+        self.userListViewModel.filterUsers.asObservable()
+            .bind(to: self.tableView.rx.items(cellIdentifier: "userCell")) { _, user, cell in
             
             if let userCell = cell as? UserTableViewCell {
                 userCell.userNameLabel.text = user.name
@@ -43,6 +46,13 @@ class UserListTableViewController: UITableViewController {
                 self.userListViewModel.getUserList()
             }
         }).disposed(by: self.userListViewModel.disposeBag)
+        
+        self.searchBar.rx.text
+            .orEmpty
+            .distinctUntilChanged()
+        .bind(to: self.userListViewModel.searchString)
+        .disposed(by: self.userListViewModel.disposeBag)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
