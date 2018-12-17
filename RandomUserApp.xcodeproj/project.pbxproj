@@ -10,6 +10,7 @@
 		4EC006D51913ED5EF5DCFBE4 /* Pods_RandomUserApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3941154B00AC4309FF29AE /* Pods_RandomUserApp.framework */; };
 		614437F621C7407E005999F2 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614437F521C7407E005999F2 /* ActivityIndicator.swift */; };
 		614437F821C74130005999F2 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614437F721C74130005999F2 /* Utility.swift */; };
+		614437FD21C75FBC005999F2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614437FC21C75FBC005999F2 /* DetailViewController.m */; };
 		61B4528721C32069001CA325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B4528621C32069001CA325 /* AppDelegate.swift */; };
 		61B4528C21C32069001CA325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B4528A21C32069001CA325 /* Main.storyboard */; };
 		61B4528E21C3206B001CA325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B4528D21C3206B001CA325 /* Assets.xcassets */; };
@@ -49,6 +50,9 @@
 /* Begin PBXFileReference section */
 		614437F521C7407E005999F2 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		614437F721C74130005999F2 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		614437FA21C75FBC005999F2 /* RandomUserApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomUserApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		614437FB21C75FBC005999F2 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		614437FC21C75FBC005999F2 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		61B4528321C32069001CA325 /* RandomUserApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B4528621C32069001CA325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61B4528B21C32069001CA325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		614437F921C75F7D005999F2 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				614437FB21C75FBC005999F2 /* DetailViewController.h */,
+				614437FC21C75FBC005999F2 /* DetailViewController.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		61B4527A21C32069001CA325 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +145,7 @@
 				61B452BD21C44D27001CA325 /* Model */,
 				61B452CB21C5AB16001CA325 /* View */,
 				61B4528621C32069001CA325 /* AppDelegate.swift */,
+				614437FA21C75FBC005999F2 /* RandomUserApp-Bridging-Header.h */,
 				61B4528D21C3206B001CA325 /* Assets.xcassets */,
 				61B4529221C3206B001CA325 /* Info.plist */,
 			);
@@ -181,6 +195,7 @@
 			children = (
 				61B452D121C5ADF5001CA325 /* Font */,
 				61B452CC21C5AB33001CA325 /* UserList */,
+				614437F921C75F7D005999F2 /* Detail */,
 				61B4528F21C3206B001CA325 /* LaunchScreen.storyboard */,
 				61B4528A21C32069001CA325 /* Main.storyboard */,
 				61B452DC21C5F0E5001CA325 /* UIViewExtension.swift */,
@@ -303,6 +318,7 @@
 				TargetAttributes = {
 					61B4528221C32069001CA325 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					61B4529621C3206B001CA325 = {
 						CreatedOnToolsVersion = 10.1;
@@ -473,6 +489,7 @@
 				61B452CE21C5ABE9001CA325 /* UserListViewModel.swift in Sources */,
 				61B452B621C43932001CA325 /* RandomUserAPIClient.swift in Sources */,
 				614437F621C7407E005999F2 /* ActivityIndicator.swift in Sources */,
+				614437FD21C75FBC005999F2 /* DetailViewController.m in Sources */,
 				61B452E821C6B784001CA325 /* UserTableViewCell.swift in Sources */,
 				61B452E321C6A89F001CA325 /* UserViewModel.swift in Sources */,
 				61B452D021C5AC91001CA325 /* UserListTableViewController.swift in Sources */,
@@ -644,7 +661,9 @@
 			baseConfigurationReference = 82309061495F376DC5B416C6 /* Pods-RandomUserApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7N6FSGEBRG;
 				INFOPLIST_FILE = RandomUserApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -653,6 +672,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.junieroniel.RandomUserApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomUserApp/RandomUserApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -663,7 +684,9 @@
 			baseConfigurationReference = DE20CC304CFEB22C364EF5D2 /* Pods-RandomUserApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7N6FSGEBRG;
 				INFOPLIST_FILE = RandomUserApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -672,6 +695,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.junieroniel.RandomUserApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomUserApp/RandomUserApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
