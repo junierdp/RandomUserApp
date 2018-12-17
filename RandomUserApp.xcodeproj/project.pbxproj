@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4EC006D51913ED5EF5DCFBE4 /* Pods_RandomUserApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3941154B00AC4309FF29AE /* Pods_RandomUserApp.framework */; };
+		614437F621C7407E005999F2 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614437F521C7407E005999F2 /* ActivityIndicator.swift */; };
+		614437F821C74130005999F2 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614437F721C74130005999F2 /* Utility.swift */; };
 		61B4528721C32069001CA325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B4528621C32069001CA325 /* AppDelegate.swift */; };
 		61B4528C21C32069001CA325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B4528A21C32069001CA325 /* Main.storyboard */; };
 		61B4528E21C3206B001CA325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B4528D21C3206B001CA325 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		614437F521C7407E005999F2 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		614437F721C74130005999F2 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		61B4528321C32069001CA325 /* RandomUserApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B4528621C32069001CA325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61B4528B21C32069001CA325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				61B452E521C6A995001CA325 /* BaseViewModel.swift */,
+				614437F521C7407E005999F2 /* ActivityIndicator.swift */,
+				614437F721C74130005999F2 /* Utility.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -405,6 +411,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RandomUserApp/Pods-RandomUserApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -414,6 +424,10 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -456,10 +470,12 @@
 				61B452E621C6A995001CA325 /* BaseViewModel.swift in Sources */,
 				61B452CE21C5ABE9001CA325 /* UserListViewModel.swift in Sources */,
 				61B452B621C43932001CA325 /* RandomUserAPIClient.swift in Sources */,
+				614437F621C7407E005999F2 /* ActivityIndicator.swift in Sources */,
 				61B452E821C6B784001CA325 /* UserTableViewCell.swift in Sources */,
 				61B452E321C6A89F001CA325 /* UserViewModel.swift in Sources */,
 				61B452D021C5AC91001CA325 /* UserListTableViewController.swift in Sources */,
 				61B452BF21C44DC1001CA325 /* User.swift in Sources */,
+				614437F821C74130005999F2 /* Utility.swift in Sources */,
 				61B452CA21C5A16E001CA325 /* ErrorMessage.swift in Sources */,
 				61B4528721C32069001CA325 /* AppDelegate.swift in Sources */,
 				61B452DD21C5F0E5001CA325 /* UIViewExtension.swift in Sources */,

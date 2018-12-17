@@ -1,5 +1,16 @@
 PODS:
   - Alamofire (4.8.0)
+  - MaterialComponents/ActivityIndicator (72.2.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+    - MotionAnimator (~> 2.0)
+  - MaterialComponents/Palettes (72.2.0)
+  - MaterialComponents/private/Application (72.2.0)
+  - MDFInternationalization (2.0.0)
+  - MotionAnimator (2.8.1):
+    - MotionInterchange (~> 1.6)
+  - MotionInterchange (1.6.0)
   - OHHTTPStubs/Core (6.1.0)
   - OHHTTPStubs/Default (6.1.0):
     - OHHTTPStubs/Core
@@ -21,6 +32,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - MaterialComponents/ActivityIndicator
   - OHHTTPStubs/Swift
   - RxCocoa
   - RxSwift
@@ -28,6 +40,10 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - MaterialComponents
+    - MDFInternationalization
+    - MotionAnimator
+    - MotionInterchange
     - OHHTTPStubs
     - RxAtomic
     - RxCocoa
@@ -35,11 +51,15 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  MaterialComponents: d1637df9976683348de8eabd10de0723ec81db3d
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
+  MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: c098dcafa08e0f25e36baa90c4632c89d6bce9da
+PODFILE CHECKSUM: ae7c1836f8b317dd2dafdab3063c1b30a1411f77
 
 COCOAPODS: 1.6.0.beta.2

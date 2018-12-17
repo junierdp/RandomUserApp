@@ -44,4 +44,20 @@ class UserListTableViewController: UITableViewController {
             }
         }).disposed(by: self.userListViewModel.disposeBag)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.userListViewModel.showLoadingIndicator.map({ isLoading in
+            if isLoading {
+                ActivityIndicator.sharedInstance.startActivityIndicator()
+            } else {
+                ActivityIndicator.sharedInstance.stopActivityIndicator()
+            }
+        }).subscribe().disposed(by: self.userListViewModel.disposeBag)
+        
+        self.userListViewModel.onError.map({ message in
+            if !message.isEmpty {
+                Utility.sharedInstance.alert("Oops!", message: message, alertAction: ["OK": .default], view: self)
+            }
+        }).subscribe().disposed(by: self.userListViewModel.disposeBag)
+    }
 }
